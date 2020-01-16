@@ -1,0 +1,2 @@
+class InfrastructuresController < ApplicationController
+end
