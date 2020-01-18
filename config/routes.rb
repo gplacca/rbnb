@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   resources :infrastructures
   get 'joke' => 'pages#joke', as: :joke
   get 'index' => 'pages#index', as: :index
-  get 'show' => 'pages#show', as: :show
+  get 'show' => 'infrastructures#show', as: :show
 
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
