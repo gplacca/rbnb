@@ -1,7 +1,41 @@
 
 // Import page-specific CSS files here.
 
-
 @import "home";
 @import "show";
 @import "joke";
+
+#map-container {
+   height: 75vh;
+   border-radius: 16px 16px;
+   border-color: #fff;
+   border-style: solid;
+   box-shadow: 2px 2px 10px #B1B1B1;
+   border-width: 7px;
+ }
+
+.card {
+  border-radius: 16px;
+}
+.featured-image {
+  width: 100%;
+  padding: 12px 12px 0px 12px;
+  border-radius: 20px;
+}
+
+.header{
+height: 300px;
+margin-bottom: 50px;
+}
+
+.img-header {
+  height: 100%;
+  width: 100%;
+}
+
+.notice {
+  display:none;
+}
+.alert {
+  display:none;
+}
