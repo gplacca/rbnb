@@ -4,7 +4,7 @@
     <div class="card-body">
       <h5 class="card-title"><%= infra.name %></h5>
       <p class="card-text"><%= infra.detail %></p>
-      <a href="#" class="btn btn-primary">More details</a>
+      <%= link_to "More details", infrastructure_path(infra.id), class:"btn btn-primary"%>
     </div>
   </div>
 <% end %>
