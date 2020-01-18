@@ -28,5 +28,5 @@ The Santiago Bernabéu is one of the world's most famous football venues. It has
     user_id: 1
   }
 ]
-Restaurant.create!(infrastructures_attributes)
+Infrastructures.create!(infrastructures_attributes)
 puts 'Finished!'
