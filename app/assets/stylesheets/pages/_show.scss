@@ -1,16 +1,46 @@
 // Import page-specific CSS files here.
+$navbar-color : #496296;
 .show {
-  .featured-image {
+  font-family: 'Montserrat', sans-serif;
 
-  }
+  .featured-image-container  {
+  height: 20em;
+  width: 100%;
 
-  .row {
+  background: url(camp-nou) no-repeat;
+      background-size: cover;
+    background-clip: border-box;
+    margin: 0px;
+}
 
+  .notice {
+    margin-bottom: 0px;
   }
 
   .cronogram{
-    font-size: 12px;
-    border-color: gray;
+    font-size: 15px;
+    background: lightgray;
+    font-family: 'Montserrat', sans-serif;
   }
+
+  .book-now {
+    width:50%;
+    background-color: $navbar-color;
+    margin: 10% auto;
+    table {
+      border:white;
+    }
+  }
+  .row {
+    margin:0px;
+  }
+
+  .card-link {
+    color: $navbar-color;
+  }
+
+  td {
+    padding: 1vh;
+}
 }
 
