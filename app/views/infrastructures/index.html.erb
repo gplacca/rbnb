@@ -1,24 +1,25 @@
 <div class = "header">
   <%= image_tag "tour-emirates-stadium", alt: "alttext", class: "img-header" %>
 </div>
-
-<% @infrastructures.each do |infra| %>
-  <div class="container">
+<div class="container">
   <div class="row">
     <div class="col">
-       <div class="card" style="width: 18rem;">
-    <%= image_tag "stade de la meinau", alt: "alttext", class: "featured-image" %>
-    <div class="card-body">
-      <h5 class="card-title"><%= infra.name %></h5>
-      <p class="card-text"><%= infra.detail %></p>
-      <%= link_to "More details", infrastructure_path(infra.id), class:"btn btn-primary"%>
+      <% @infrastructures.each do |infra| %>
+        <div class="card" style="width: 18rem;">
+          <%= image_tag "stade de la meinau", alt: "alttext", class: "featured-image" %>
+            <div class="card-body">
+              <h5 class="card-title"><%= infra.name %></h5>
+              <p class="card-text"><%= infra.detail %></p>
+              <%= link_to "More details", infrastructure_path(infra.id), class:"btn btn-primary"%>
+            </div>
+          </div>
+          <% end %>
+        </div>
+          <div class="col">
+            <div id="map-container">
+              <div id="map-canvas"></div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-    </div>
-    <div class="col">
-     <div id="map-container">
-    <div id="map-canvas"></div>
-  </div>
-    </div>
-  </div>
-<% end %>
+
