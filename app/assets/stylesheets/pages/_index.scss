@@ -5,7 +5,9 @@
 @import "show";
 @import "joke";
 
-#map-container {
+.index {
+
+  #map-container {
    height: 75vh;
    border-radius: 16px 16px;
    border-color: #fff;
@@ -39,4 +41,5 @@ margin-bottom: 50px;
 }
 .alert {
   display:none;
+}
 }
