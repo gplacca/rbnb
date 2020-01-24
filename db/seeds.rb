@@ -33,3 +33,19 @@ camp_nou.save!
 
 santiago_bernabeu = Infrastructure.new(name: "Santiago Bernabeu", user_id: 1)
 santiago_bernabeu.save!
+
+bombonera = Infrastructure.new(name: "La Bombonera", user_id: 1)
+bombonera.save!
+
+parc_des_princes = Infrastructure.new(name: "Parc des Princes", user_id: 1)
+parc_des_princes.save!
+
+stade_de_france = Infrastructure.new(name: "Stade de France", user_id: 1)
+stade_de_france.save!
+
+jean_bouin = Infrastructure.new(name: "Jean-Bouin", user_id: 1)
+jean_bouin.save!
+
+pierre_mauroy = Infrastructure.new(name: "Pierre-Mauroy", user_id: 1)
+pierre_mauroy.save!
+
