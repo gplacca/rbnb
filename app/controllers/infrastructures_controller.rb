@@ -1,7 +1,10 @@
 class InfrastructuresController < ApplicationController
 
   def index
-    @infrastructures = Infrastructure.all
+    @infrastructures = Infrastructure.where.not(latitude: nil, longitude: nil)
+    @markers = @infrastructures.map do |infrastructure|
+      { lat: infrastructure.latitude, lng: infrastructure.longitude }
+    end
   end
 
   def show

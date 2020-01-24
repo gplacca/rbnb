@@ -4,21 +4,21 @@
 
 <% @infrastructures.each do |infra| %>
   <div class="container">
-  <div class="row">
-    <div class="col">
+    <div class="row">
+      <div class="col-8">
        <div class="card" style="width: 18rem;">
-    <%= image_tag "stade de la meinau", alt: "alttext", class: "featured-image" %>
-    <div class="card-body">
-      <h5 class="card-title"><%= infra.name %></h5>
-      <p class="card-text"><%= infra.detail %></p>
-      <%= link_to "More details", infrastructure_path(infra.id), class:"btn btn-primary"%>
+        <%= image_tag "stade de la meinau", alt: "alttext", class: "featured-image" %>
+          <div class="card-body">
+            <h5 class="card-title"><%= infra.name %></h5>
+            <p class="card-text"><%= infra.detail %></p>
+            <%= link_to "More details", infrastructure_path(infra.id), class:"btn btn-primary"%>
+          </div>
+        </div>
     </div>
+    <% end %>
+      <div class="col-4">
+        <div id="map-container">
+        </div>
+      </div>
   </div>
-    </div>
-    <div class="col">
-     <div id="map-container">
-    <div id="map-canvas"></div>
-  </div>
-    </div>
-  </div>
-<% end %>
+
