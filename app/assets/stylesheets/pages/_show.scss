@@ -21,8 +21,9 @@ $navbar-color : #496296;
 
   .cronogram{
     font-size: 15px;
-    background: lightgray;
+    background: $navbar-color;
     font-family: 'Montserrat', sans-serif;
+    color: white;
   }
 
   .book-now {
@@ -42,7 +43,20 @@ $navbar-color : #496296;
   }
 
   td {
-    padding: 1vh;
+    padding: 0.7vh;
 }
+
+  .book-now {
+    margin:10% auto;
+  }
+  .card {
+    border-radius: 15px;
+    padding: 10px;
+    margin:10px;
+  }
+
+  .carousel-inner {
+        border-radius: 15px;
+  }
 }
 
