@@ -28,24 +28,24 @@
 # Infrastructures.create!(infrastructures_attributes)
 # puts 'Finished!'
 
-camp_nou = Infrastructure.new(name: "Camp Nou", user_id: 1)
+camp_nou = Infrastructure.new(name: "Camp Nou", user_id: 1, location: "C. d'Arístides Maillol, 12, 08028 Barcelona, España")
 camp_nou.save!
 
-santiago_bernabeu = Infrastructure.new(name: "Santiago Bernabeu", user_id: 1)
+santiago_bernabeu = Infrastructure.new(name: "Santiago Bernabeu", user_id: 1, location: "Av. de Concha Espina, 1, 28036 Madrid, España")
 santiago_bernabeu.save!
 
-bombonera = Infrastructure.new(name: "La Bombonera", user_id: 1)
+bombonera = Infrastructure.new(name: "La Bombonera", user_id: 1, location: "Calle de Puentedey, 36, 28031 Madrid, España")
 bombonera.save!
 
-parc_des_princes = Infrastructure.new(name: "Parc des Princes", user_id: 1)
+parc_des_princes = Infrastructure.new(name: "Parc des Princes", user_id: 1, location: "24 Rue du Commandant Guilbaud, 75016 Paris")
 parc_des_princes.save!
 
-stade_de_france = Infrastructure.new(name: "Stade de France", user_id: 1)
+stade_de_france = Infrastructure.new(name: "Stade de France", user_id: 1, location: "Stade de France, Rue Henri Delaunay, 93210 Saint-Denis")
 stade_de_france.save!
 
-jean_bouin = Infrastructure.new(name: "Jean-Bouin", user_id: 1)
+jean_bouin = Infrastructure.new(name: "Jean-Bouin", user_id: 1, location: "1 Allée Charles Brennus, 75016 Paris")
 jean_bouin.save!
 
-pierre_mauroy = Infrastructure.new(name: "Pierre-Mauroy", user_id: 1)
+pierre_mauroy = Infrastructure.new(name: "Pierre-Mauroy", user_id: 1, location: "261 Boulevard de Tournai, 59650 Villeneuve-d'Ascq")
 pierre_mauroy.save!
 
