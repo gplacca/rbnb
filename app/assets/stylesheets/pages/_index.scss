@@ -7,6 +7,20 @@
 
 .index {
 
+  .featured-image-container  {
+  height: 20em;
+  width: 100%;
+  background: url(https://cldup.com/pZ79MsILKh-3000x3000.jpeg) no-repeat;
+  background-size: cover;
+  background-clip: border-box;
+  margin: 0px;
+  }
+
+  .container {
+    margin: 0;
+    padding: 3%;
+    max-width: 100%;
+  }
   #map-container {
    height: 75vh;
    border-radius: 16px 16px;
@@ -15,10 +29,12 @@
    box-shadow: 2px 2px 10px #B1B1B1;
    border-width: 7px;
    vertical-align: top;
+   height: 70vh;
  }
 
 .card {
   border-radius: 16px;
+
 }
 .featured-image {
   width: 100%;
@@ -42,4 +58,5 @@ margin-bottom: 50px;
 .alert {
   display:none;
 }
+
 }
