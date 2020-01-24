@@ -1,5 +1,6 @@
 <div class="index">
   <div class = "featured-image-container">
+    PLGRND
   </div>
   <div class="container">
     <div class="row">
@@ -9,7 +10,9 @@
 
           <div class="col-6">
             <div class="card" >
-              <%= image_tag "https://cldup.com/aSepe6mewy-3000x3000.jpeg", alt: "alttext", class: "featured-image" %>
+              <div class="img-wrapper">
+              <%= image_tag infra.image , alt: "alttext", class: "featured-image" %>
+              </div>
               <div class="card-body">
                 <h5 class="card-title"><%= infra.name %></h5>
                 <p class="card-text"><%= infra.detail %></p>
