@@ -5,6 +5,9 @@
 @import "show";
 @import "joke";
 
+.notice {
+  display:none;
+}
 .index {
 
   .featured-image-container  {
@@ -18,7 +21,7 @@
 
   .container {
     margin: 0;
-    padding: 3%;
+    padding: 1.5% 3%;
     max-width: 100%;
   }
   #map-container {
