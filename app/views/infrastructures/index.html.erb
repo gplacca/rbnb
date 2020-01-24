@@ -4,29 +4,36 @@
   <div class="container">
     <div class="row">
       <div class="col-6">
-                <div class="row">
-        <% @infrastructures.each do |infra| %>
+        <div class="row">
+          <% @infrastructures.each do |infra| %>
 
-        <div class="col-6">
-        <div class="card" >
-          <%= image_tag "https://cldup.com/aSepe6mewy-3000x3000.jpeg", alt: "alttext", class: "featured-image" %>
-          <div class="card-body">
-            <h5 class="card-title"><%= infra.name %></h5>
-            <p class="card-text"><%= infra.detail %></p>
-            <%= link_to "More details", infrastructure_path(infra.id), class:"btn btn-primary"%>
+          <div class="col-6">
+            <div class="card" >
+              <%= image_tag "https://cldup.com/aSepe6mewy-3000x3000.jpeg", alt: "alttext", class: "featured-image" %>
+              <div class="card-body">
+                <h5 class="card-title"><%= infra.name %></h5>
+                <p class="card-text"><%= infra.detail %></p>
+                <%= link_to "More details", infrastructure_path(infra.id), class:"btn btn-primary"%>
+              </div>
+            </div>
           </div>
-        </div>
-        </div>
-        <% end %>
+          <% end %>
         </div>
       </div>
       <div class="col-6">
         <div id="map-container">
-          <div id="map-canvas"></div>
+          <div id="map-canvas">
+            <div
+            id="map"
+            style="width: 100%;
+            height: 600px;"
+            data-markers="<%= @markers.to_json %>"
+            data-mapbox-api-key="<%= ENV['pk.eyJ1Ijoia2V2aW5yaWV0c2NoIiwiYSI6ImNrMzkwZmxnbzBlMXMzaG95cnV3N2x2cjAifQ.N_n7acS6OhD6mdAN-igqeA'] %>"
+            ></div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-
 

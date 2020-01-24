@@ -1,7 +1,15 @@
 class InfrastructuresController < ApplicationController
 
   def index
-    @infrastructures = Infrastructure.all
+    @infrastructures = Infrastructure.geocoded
+    #returns flats with coordinates
+
+    @markers = @infrastructures.map do |infrastructure|
+      {
+        lat: infrastructure.latitude,
+        lng: infrastructure.longitude
+      }
+    end
   end
 
   def show
