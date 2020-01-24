@@ -23,13 +23,13 @@
       <div class="col-6">
         <div id="map-container">
           <div id="map-canvas">
-            <div
-            id="map"
-            style="width: 100%;
-            height: 600px;"
-            data-markers="<%= @markers.to_json %>"
-            data-mapbox-api-key="<%= ENV['pk.eyJ1IjoibnVueXZlZ2EiLCJhIjoiY2s1c21xY2lqMG5pYzNsbXVpOXJ4b3BvcCJ9.MvlMWEtPeBxTdNbml7JZ2g'] %>"
-            ></div>
+<div
+  id="map"
+  style="width: 100%;
+  height: 600px;"
+  data-markers="<%= @markers.to_json %>"
+  data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"
+></div>
           </div>
         </div>
       </div>
