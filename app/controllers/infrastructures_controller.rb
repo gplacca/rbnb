@@ -1,7 +1,22 @@
 class InfrastructuresController < ApplicationController
 
   def index
-    @infrastructures = Infrastructure.all
+    @infrastructures = Infrastructure.geocoded
+    #returns flats with coordinates
+
+    @markers = @infrastructures.map do |infrastructure|
+      {
+        lat: infrastructure.latitude,
+        lng: infrastructure.longitude
+      }
+    end
+    if params[:query].present?
+      sql_query = "name ILIKE :query OR location ILIKE :query"
+      @infrastructures = Infrastructure.where(sql_query, query: "%#{params[:query]}%")
+    else
+      @infrastructures = Infrastructure.all
+    end
+
   end
 
   def show

@@ -5,10 +5,28 @@
 @import "show";
 @import "joke";
 
+.notice {
+  display:none;
+}
 .index {
 
+  .featured-image-container  {
+  height: 25em;
+  width: 100%;
+  background: url(https://cldup.com/HdYNVTQ4q0-3000x3000.jpeg) no-repeat;
+  background-size: cover;
+  background-clip: border-box;
+  margin: 0px;
+  }
+
+  .container {
+    margin: 0;
+    padding: 1.5% 3%;
+    max-width: 100%;
+  }
   #map-container {
-   height: 75vh;
+
+   height: auto;
    border-radius: 16px 16px;
    border-color: #fff;
    border-style: solid;
@@ -19,12 +37,10 @@
 
 .card {
   border-radius: 16px;
+  max-height:95%;
+  text-align: center;
 }
-.featured-image {
-  width: 100%;
-  padding: 12px 12px 0px 12px;
-  border-radius: 20px;
-}
+
 
 .header{
 height: 300px;
@@ -42,4 +58,25 @@ margin-bottom: 50px;
 .alert {
   display:none;
 }
+.img-wrapper {
+    width: 100%;
+  max-height: 175px;
+    overflow: hidden;
+
+}
+.featured-image {
+  width: 100%;
+
+  padding: 12px 12px 0px 12px;
+  border-radius: 20px;
+}
+
+.navbar {
+  background-color:#496296 !important;
+  height: 60px;
+}
+form {
+  width:100%;
+}
+
 }
