@@ -1,6 +1,11 @@
 // Specific CSS for your home-page
 
 .home {
+
+  .footer {
+    display:none !important;
+  }
+
   position: absolute;
   top:0;
   left: 0;
