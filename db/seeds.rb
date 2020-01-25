@@ -38,8 +38,20 @@ parc_des_princes = Infrastructure.new(name: "Parc des Princes", user_id: 1, loca
 parc_des_princes.save!
 stade_de_france = Infrastructure.new(name: "Stade de France", user_id: 1, location: "Stade de France, Rue Henri Delaunay, 93210 Saint-Denis", image:"http://scd.rfi.fr/sites/filesrfi/dynimagecache/0/25/1024/579/1024/578/sites/images.rfi.fr/files/aef_image/rsz_000_97449_0.jpg")
 stade_de_france.save!
-jean_bouin = Infrastructure.new(name: "Jean-Bouin", user_id: 1, location: "1 Allée Charles Brennus, 75016 Paris", image:"https://rudyricciotti.com/wp-content/uploads/2015/09/Air_Images_A075E1078-2194.jpg")
-jean_bouin.save!
+jean_bouin2 = Infrastructure.new(name: "Jean-Bouin", user_id: 1, location: "1 Allée Charles Brennus, 75016 Paris", image:"https://rudyricciotti.com/wp-content/uploads/2015/09/Air_Images_A075E1078-2194.jpg")
+jean_bouin2.save!
 pierre_mauroy = Infrastructure.new(name: "Pierre-Mauroy", user_id: 1, location: "261 Boulevard de Tournai, 59650 Villeneuve-d'Ascq", image:"http://www.stade-pierre-mauroy.com/images/actualites/LOSC-NANCY.jpg")
 pierre_mauroy.save!
+santiago_bernabeu2 = Infrastructure.new(name: "Santiago Bernabeu ", user_id: 1, location: "Av. de Concha Espina, 1, 28036 Madrid, España", image:"https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Panoramic_santiago_bernabeu.jpg/1200px-Panoramic_santiago_bernabeu.jpg")
+santiago_bernabeu2.save!
+bombonera = Infrastructure.new(name: "La Bombonera", user_id: 1, location: "Calle de Puentedey, 36, 28031 Madrid, España", image:"https://www.marketingregistrado.com/img/noticias/bombonera_(8).jpg")
+bombonera.save!
+parc_des_princes2 = Infrastructure.new(name: "Parc des Princes", user_id: 1, location: "24 Rue du Commandant Guilbaud, 75016 Paris", image:"https://www.vipsg.fr/wp-content/uploads/2019/04/arcadevr-header.jpg")
+parc_des_princes2.save!
+stade_de_france2 = Infrastructure.new(name: "Stade de France", user_id: 1, location: "Stade de France, Rue Henri Delaunay, 93210 Saint-Denis", image:"http://scd.rfi.fr/sites/filesrfi/dynimagecache/0/25/1024/579/1024/578/sites/images.rfi.fr/files/aef_image/rsz_000_97449_0.jpg")
+stade_de_france2.save!
+jean_bouin2 = Infrastructure.new(name: "Jean-Bouin", user_id: 1, location: "1 Allée Charles Brennus, 75016 Paris", image:"https://rudyricciotti.com/wp-content/uploads/2015/09/Air_Images_A075E1078-2194.jpg")
+jean_bouin2.save!
+pierre_mauroy2 = Infrastructure.new(name: "Pierre-Mauroy", user_id: 1, location: "261 Boulevard de Tournai, 59650 Villeneuve-d'Ascq", image:"http://www.stade-pierre-mauroy.com/images/actualites/LOSC-NANCY.jpg")
+pierre_mauroy2.save!
 

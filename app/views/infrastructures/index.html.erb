@@ -1,41 +1,58 @@
 <div class="index">
-  <div class = "featured-image-container">
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-md-6">
-        <div class="row">
-          <% @infrastructures.each do |infra| %>
+	<div class = "featured-image-container">
+	</div>
+	<nav class="navbar navbar-dark bg-primary">
+  			<%= form_tag infrastructures_path, method: :get do %>
+  			<div class="form-row">
+  		<div class="form-group col-md-8">
+			<%= text_field_tag :query,
+			params[:query],
+			class: "form-control",
+				placeholder: "Find your place"
+				%>
+				</div>
+				 <div class="form-group col-md-4">
+				<%= submit_tag "Search", class: "btn  btn-primary" %>
+			</div>
+			</div>
+				<% end %>
+</nav>
+	<div class="container">
 
-          <div class="col-6">
-            <div class="card" >
-              <div class="img-wrapper">
-              <%= image_tag infra.image , alt: "alttext", class: "featured-image" %>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title"><%= infra.name %></h5>
-                <p class="card-text"><%= infra.detail %></p>
-                <%= link_to "More details", infrastructure_path(infra.id), class:"btn btn-primary"%>
-              </div>
-            </div>
-          </div>
-          <% end %>
-        </div>
-      </div>
-      <div class="col-12 col-md-6">
-        <div id="map-container">
+			<div class="row">
+				<div class="col-12 col-md-6">
+					<div class="row">
+						<% @infrastructures.each do |infra| %>
 
-      <div
-        id="map"
-        style="width: 100%;
-        height: 600px;"
-        data-markers="<%= @markers.to_json %>"
-        data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"
-      ></div>
+						<div class="col-6">
+							<div class="card" >
+								<div class="img-wrapper">
+									<%= image_tag infra.image , alt: "alttext", class: "featured-image" %>
+								</div>
+								<div class="card-body">
+									<h5 class="card-title"><%= infra.name %></h5>
+									<p class="card-text"><%= infra.location %></p>
+									<%= link_to "More details", infrastructure_path(infra.id), class:"btn btn-primary"%>
+								</div>
+							</div>
+						</div>
+						<% end %>
+					</div>
+				</div>
+				<div class="col-12 col-md-6">
+					<div id="map-container">
 
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+						<div
+						id="map"
+						style="width: 100%;
+						height: 600px;"
+						data-markers="<%= @markers.to_json %>"
+						data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"
+						></div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 

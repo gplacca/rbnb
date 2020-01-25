@@ -10,6 +10,13 @@ class InfrastructuresController < ApplicationController
         lng: infrastructure.longitude
       }
     end
+    if params[:query].present?
+      sql_query = "name ILIKE :query OR location ILIKE :query"
+      @infrastructures = Infrastructure.where(sql_query, query: "%#{params[:query]}%")
+    else
+      @infrastructures = Infrastructure.all
+    end
+
   end
 
   def show

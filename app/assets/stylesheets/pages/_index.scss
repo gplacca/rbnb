@@ -5,9 +5,24 @@
 @import "show";
 @import "joke";
 
+$button-color: #E67E22;
+$navbar-color: #496296;
 .notice {
   display:none;
 }
+
+.btn-primary {
+  background-color: $navbar-color;
+  border-color: $navbar-color;
+  border-radius:5px;
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+  background-color: $button-color !important;
+  border-color: $button-color !important;
+  border-width: 3px;
+}
+
 .index {
 
   .featured-image-container  {
@@ -69,6 +84,27 @@ margin-bottom: 50px;
 
   padding: 12px 12px 0px 12px;
   border-radius: 20px;
+}
+
+.navbar {
+  background-color: $navbar-color !important;
+  height: 60px;
+}
+form {
+  width:85%;
+  padding:0;
+  margin:auto;
+}
+.form-row {
+text-align: center;
+}
+.form-group .btn{width:100%;
+background-color: $button-color;
+border-color: $button-color;
+border-radius:5px;}
+
+.form-control {
+  border-radius:5px;
 }
 
 }
