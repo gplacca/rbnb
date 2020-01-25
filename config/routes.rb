@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'users/bookings'
+    get 'users/mybookings'
   devise_for :users
   root to: 'pages#home'
   resources :infrastructures
