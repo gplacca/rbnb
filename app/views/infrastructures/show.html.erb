@@ -64,27 +64,26 @@
       </div>
       <div class="modal-body">
         <form>
-  <div class="form-group">
-    <label for="exampleFormControlInput1">Start date</label>
-    <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="mm/dd/yyyy">
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlSelect1">Duration</label>
-    <select class="form-control" id="exampleFormControlSelect1">
-      <option>1 day</option>
-      <option>2 days</option>
-      <option>3 days</option>
-      <option>4 days</option>
-      <option>5 days</option>
-    </select>
-  </div>
-</form>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Start date</label>
+            <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="mm/dd/yyyy">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Duration</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>1 day</option>
+              <option>2 days</option>
+              <option>3 days</option>
+              <option>4 days</option>
+              <option>5 days</option>
+            </select>
+          </div>
+        </form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Let's book the Camp Nou !</button>
+        <%= link_to "Let's book the Camp Nou", users_bookings_path, class:"btn btn-primary"%>      </div>
       </div>
     </div>
   </div>
-</div>
-<footer><%= render 'shared/footer' %></footer>
+  <footer><%= render 'shared/footer' %></footer>
