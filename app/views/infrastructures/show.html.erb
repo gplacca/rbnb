@@ -44,10 +44,46 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
-      <button type="button" class="btn btn-primary btn-lg btn-block book-now rounded">Book now</button>
-
+      <button type="button" class="btn btn-primary btn-lg btn-block book-now rounded" data-toggle="modal" data-target="#exampleModal">
+        Book now
+      </button>
     </div> </div>
   </div>
 </div>
 </div>
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">New booking</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Start date</label>
+    <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="mm/dd/yyyy">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Duration</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>1 day</option>
+      <option>2 days</option>
+      <option>3 days</option>
+      <option>4 days</option>
+      <option>5 days</option>
+    </select>
+  </div>
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Let's book the Camp Nou !</button>
+      </div>
+    </div>
+  </div>
 </div>
